@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blackjack</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+      }
+      h1 {
+        color: #987654;
+        margin-bottom: 50px;
+        font-size: 45px;
+      }
+
+      .button {
+        background-color: rgb(10, 10, 10);
+        color: #fff;
+        border: none;
+        padding: 8px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 80px;
+        align-self: center;
+        transform: translateY(130px);
+      }
+      .button:hover {
+        background-color: #023304;
+      }
+
+      .login-btn {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .signup-btn {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button login-btn">Başla</button>
+  </body>
+  <script>
+    document.querySelector(".login-btn").addEventListener("click", () => {
+      window.location.href = "/oyun.html";
+    });
+  </script>
+</html>
